@@ -349,7 +349,8 @@ FOOTER
 
 p {
     font-size: 12px;
-    margin-top: 0;
+    margin: 10px;
+    padding: auto;
 }
 
 h3 {
