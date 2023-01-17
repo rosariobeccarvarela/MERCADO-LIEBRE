@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="/images/logo-mercado-liebre.svg" class="logo">
+
+            <input type="text" name="Buscar" placeholder="Buscar" class="buscar">
+            
+            <h2 class="copy-header">
+                <i class="fas fa-hand-holding-usd"></i>
+                Comprá en cuotas y sin tarjeta de crédito</h2>
+        </div>
+
+        <a href="#" class="hamburger-button">
+            <i class="fas fa-bars"></i>
+        </a>
+
+        <nav class="main-header-bottom-bar">
+            <ul class="left-navbar">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="right-navbar">
+                <li><a href="#">Creá tu cuenta
+                    <i class="fas fa-id-card"></i></a></li>
+                <li><a href="#">Ingresá
+                    <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis compras
+                    <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+</header>
+
+<form action="/crear-producto" method="POST" class="create-form">
+    <div class="control-formulario">
+        <input type="text" name="nombre" class="control" placeholder="Nombre y Apellido">
+    </div>
+    <div class="control-formulario">
+        <input type="text" name="usuario" placeholder="Nombre de usuario" class="control">
+    </div>
+    <div class="control-formulario">
+        <label>Fecha de nacimiento</label>
+        <input type="date" name="fecha" class="control">
+    </div>
+    <div class="control-formulario">
+        <input type="text" name="domicilio" placeholder="Domicilio" class="control">
+    </div>
+    <div class="control-formulario">
+        <label>Perfil del Usuario</label>
+        <div class="perfil">
+        <label class="opcion">Comprador</label>
+        <input type="radio" name="compra" value="Comprador" class="control">
+        <label class="opcion">Vendedor</label>
+        <input type="radio" name="venta" value="Vendedor" class="control">
+    </div>
+    </div>
+    <div class="control-formulario">
+        <label>Intereses</label>
+        <label class="opcion">Electro</label>
+        <input type="checkbox" name="interes" value="Electro">
+        <label class="opcion">Moda</label>
+        <input type="checkbox" name="interes" value="Moda">
+        <label class="opcion">Hogar</label>
+        <input type="checkbox" name="interes" value="Hogar">
+        <label class="opcion">Juguetería</label>
+        <input type="checkbox" name="interes" value="Jugueteria">
+        <label class="opcion">Vida sana</label>
+        <input type="checkbox" name="interes" value="VidaSana">
+    </div>
+    <div class="control-formulario">
+        <label>Seleccionar una foto para el perfil</label>
+        <input type="file" name="avatar" accept=".jpg" multiple class="control">
+    </div>
+    <div class="control-formulario">
+        <div class="contraseña">
+        <input type="password" name="contraseña" class="control" placeholder="Contraseña">
+    </div>
+        <input type="password" name="confirmo" placeholder="Confirmar contraseña" class="control">
+    
+    </div>
+
+    <button type="submit" class="boton-formulario">Guardar</button>
+    <button type="reset" class="boton-formulario">Borrar</button>
+</form>
+
+</body>
+</html>
